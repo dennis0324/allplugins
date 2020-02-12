@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Stamina:jar">
+    <output-path>$USER_HOME$/Downloads/1.15/plugins</output-path>
+    <root id="archive" name="Stamina.jar">
+      <element id="module-output" name="Stamina" />
+    </root>
+  </artifact>
+</component>

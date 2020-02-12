@@ -1,0 +1,32 @@
+#########################################################################################
+#                                                                                       #
+
+#check of player is running or not(in tick)
+updateStamina: 10
+
+#general stamina
+startStamina: 50
+
+#max stamina
+maxStamina: 150
+
+#increase amount when stamina update
+staminaDecreaseAmount: 2.0
+
+#decrease amount when stamina update
+staminaIncreaseAmount: 4.0
+
+#maxStaminaDecreaseAmount
+maxStaminaDecreaseAmount: 0.01
+
+#mode that allow stamina
+staminaInMode:
+  - SURVIVAL
+  #- CREATIVE
+  #- ADVENTURE
+  #- SPECTATOR
+
+#give you slowness under this number
+slownessStamina: 25
+
+titleFormat: "&6&lStamina&r [{stamina}/{startStamina}]"

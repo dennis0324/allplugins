@@ -1,0 +1,8 @@
+name: Stamina
+version: ${project.version}
+main: org.apache.maven.stamina.Stamina
+api-version: 1.13
+commands:
+  reload:
+    description: Reload The Stamina Plugin
+  
