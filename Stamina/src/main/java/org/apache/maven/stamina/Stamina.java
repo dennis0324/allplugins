@@ -13,6 +13,7 @@ public final class Stamina extends JavaPlugin implements Listener {
         StaminaContorl staminaContorl;
     @Override
     public void onEnable() {
+
         // Plugin startup logic
         System.out.println("[Stamina] Starting Up...");
         staminaContorl = new StaminaContorl(this);
@@ -24,7 +25,7 @@ public final class Stamina extends JavaPlugin implements Listener {
         staminaContorl.bossBarTitleFormat(getConfig().getString("titleFormat"));
         staminaContorl.setSlownessStamina(getConfig().getInt("slownessStamina"));
         System.out.println("[Stamina] Setting Up Config Files ...");
-        
+
         System.out.println("[Stamina] Setting Up Config Files ...");
         staminaContorl.loadConfig(loadConfig(this));
         System.out.println("[Stamina] Getting All Data From Online Player...");
@@ -50,4 +51,11 @@ public final class Stamina extends JavaPlugin implements Listener {
 
         return false;
     }
+
+//    private void displayBanner(Sender sender) {
+//        sender.sendMessage(Message.colorize("&b   ___   ___   ___  &3 __    "));
+//        sender.sendMessage(Message.colorize("&b  |___    |   |___| &3|__)   " + "&2LuckPerms &bv" + getBootstrap().getVersion()));
+//        sender.sendMessage(Message.colorize("&b   ___|   |   |   | &3|      " + "&8Running on " + getBootstrap().getType().getFriendlyName() + " - " + getBootstrap().getServerBrand()));
+//        sender.sendMessage("");
+//    }
 }

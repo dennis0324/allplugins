@@ -5,4 +5,5 @@ api-version: 1.13
 commands:
   reload:
     description: Reload The Stamina Plugin
-  
+  setvalue:
+    description: Set a config value via command
