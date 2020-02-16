@@ -1,7 +1,9 @@
 package org.apache.maven.stamina;
 
 import org.apache.maven.stamina.Commands.SetValue;
+import org.apache.maven.stamina.Commands.StaminaCommands;
 import org.apache.maven.stamina.TabComplete.SetValueTab;
+import org.apache.maven.stamina.TabComplete.StaminaCommandsTab;
 import org.bukkit.boss.BossBar;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -36,7 +38,9 @@ public final class Stamina extends JavaPlugin implements Listener {
         }
         getCommand("setvalue").setTabCompleter(new SetValueTab(this,list));
         getCommand("setvalue").setExecutor(new SetValue(this,list,playerlist));
-//        getCommand("SetValue").setTabCompleter(new SetValueTab(this,getConfig().));
+        getCommand("stamina").setTabCompleter(new StaminaCommandsTab(this));
+        getCommand("stamina").setExecutor(new StaminaCommands(this,staminaContorl));
+//        getCommand()
         getConfig().options().copyDefaults();
         System.out.println("[Stamina] Loading Config From config.yml ...");
         staminaContorl.setAvailableGamemode(getConfig().getStringList("staminaInMode"));

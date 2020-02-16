@@ -48,7 +48,6 @@ public class PlayerConfig extends SimpleConfigManager{
 
 
     public static void updateConfig(HashMap<String,Double> list,Player player){
-        System.out.println(list);
         HashMap<String,Double> configt = list;
         file = new File(Bukkit.getServer().getPluginManager().getPlugin("Stamina").getDataFolder()+"/userdata",player.getUniqueId() + ".yml");
 

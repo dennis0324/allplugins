@@ -7,19 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2056d0e1-4700-419c-a5c7-38b4d752e1e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/Commands/StaminaCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/PluginLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/TabComplete/SetValueTab.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/TabComplete/StaminaCommandsTab.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/Commands/Reload.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/Commands/SetValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/Commands/SetValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/Commands/StaminaCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/Commands/StaminaCommands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/Stamina.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/Stamina.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/StaminaContorl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/StaminaContorl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stamina/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stamina/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/target/classes/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/TabComplete/StaminaCommandsTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/TabComplete/StaminaCommandsTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/files/PlayerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/src/main/java/org/apache/maven/stamina/files/PlayerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stamina/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stamina/target/classes/org/apache/maven/stamina/Commands/Reload.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Stamina/target/classes/org/apache/maven/stamina/Stamina.class" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/target/classes/org/apache/maven/stamina/Stamina.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stamina/target/classes/org/apache/maven/stamina/StaminaContorl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/target/classes/org/apache/maven/stamina/StaminaContorl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stamina/target/classes/org/apache/maven/stamina/files/PlayerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/target/classes/org/apache/maven/stamina/files/PlayerConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stamina/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Stamina/target/classes/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,10 +150,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581855765069" />
-    <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1581509671132">
+    <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1581857979136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581509671132" />
+    <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581857979136" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1581837688954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

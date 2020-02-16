@@ -3,7 +3,7 @@ version: 1.0-SNAPSHOT
 main: org.apache.maven.stamina.Stamina
 api-version: 1.13
 commands:
-  reload:
-    description: Reload The Stamina Plugin
+  stamina:
+    description: Reload/save The Stamina Plugin
   setvalue:
     description: Set a config value via command

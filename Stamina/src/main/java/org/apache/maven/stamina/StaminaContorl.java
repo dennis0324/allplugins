@@ -92,7 +92,11 @@ public class StaminaContorl extends BukkitRunnable implements Listener {
                     bar.setVisible(true);
                 }
             }
-            bar.setProgress(var1.get("Info.stamina") / var1.get("Info.maxStamina"));
+            double var4 = var1.get("Info.stamina") / var1.get("Info.maxStamina");
+            if(Math.abs(var4) > 1){
+                var4 = 1;
+            }
+            bar.setProgress(var4);
         }
     }
     //스태미나, 스태미나 상한선, 스태미나 다는 속도, 스태미나 차는 속도, 스태미나 상한선 다는 속도,
@@ -167,9 +171,7 @@ public class StaminaContorl extends BukkitRunnable implements Listener {
 
     public void saveServerData(){
         for(Player player : plugin.getServer().getOnlinePlayers()){
-            isRunning.remove(player.getPlayer().getUniqueId());
             PlayerConfig.updateConfig(playerlist.get(player.getPlayer().getUniqueId()),player.getPlayer());
-            playerlist.remove(player.getPlayer().getUniqueId());
         }
     }
 }
