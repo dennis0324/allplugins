@@ -40,16 +40,18 @@ public class StaminaContorl extends BukkitRunnable implements Listener {
     public void setSlownessStamina(int value){this.slownessStamina = value; }
 
     //contorl possible gamemode
-    public StaminaContorl(Stamina plugin) {
+    public StaminaContorl(Stamina plugin,HashMap<UUID, HashMap<String,Double>> playerlist) {
+        this.playerlist = playerlist;
         this.plugin = plugin;
     }
+
     @Override
     public void run(){
         Set<UUID> players = isRunning.keySet();
         for(Player p : plugin.getServer().getOnlinePlayers()){
             HashMap<String, Double> var1;
             var1 = playerlist.get(p.getUniqueId());
-            if(p.getFoodLevel() < 19){
+            if(p.getFoodLevel() != 19){
                 p.setFoodLevel(19);
             }
             if(var1.get("Info.stamina") >= slownessStamina){
@@ -72,9 +74,9 @@ public class StaminaContorl extends BukkitRunnable implements Listener {
             else{
                 if(var1.get("Info.stamina") <var1.get("Info.startStamina")){
                     var1.put("Info.stamina",var1.get("Info.stamina") + var1.get("Info.staminaIncreaseAmount"));
-                    if(var1.get("Info.stamina") >var1.get("Info.startStamina")){
-                        var1.put("Info.stamina",var1.get("Info.startStamina"));
-                    }
+                }
+                if(var1.get("Info.stamina") >var1.get("Info.startStamina")){
+                    var1.put("Info.stamina",var1.get("Info.startStamina"));
                 }
             }
             BossBar bar = StaminaBars.get(p.getUniqueId());
@@ -161,5 +163,13 @@ public class StaminaContorl extends BukkitRunnable implements Listener {
             temp.put("Info."+string,playerConfig.get().getDouble("Info."+string));
         }
         playerlist.put(p.getUniqueId(),temp);
+    }
+
+    public void saveServerData(){
+        for(Player player : plugin.getServer().getOnlinePlayers()){
+            isRunning.remove(player.getPlayer().getUniqueId());
+            PlayerConfig.updateConfig(playerlist.get(player.getPlayer().getUniqueId()),player.getPlayer());
+            playerlist.remove(player.getPlayer().getUniqueId());
+        }
     }
 }

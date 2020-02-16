@@ -1,23 +1,39 @@
 #########################################################################################
 #                                                                                       #
-
+commands:
 #check of player is running or not(in tick)
-updateStamina: 10
+  updateStamina:
+    value: 10
+    description: "check of player is running or not(in tick)"
+  #general stamina
+  startStamina:
+    value: 50
+    description: ""
 
-#general stamina
-startStamina: 50
+  #max stamina
+  maxStamina:
+    value: 150
+    description: ""
 
-#max stamina
-maxStamina: 150
+  #increase amount when stamina update
+  staminaDecreaseAmount:
+    value: 2.0
+    description: ""
 
-#increase amount when stamina update
-staminaDecreaseAmount: 2.0
+  #decrease amount when stamina update
+  staminaIncreaseAmount:
+    value: 4.0
+    description: ""
 
-#decrease amount when stamina update
-staminaIncreaseAmount: 4.0
+  #maxStaminaDecreaseAmount
+  maxStaminaDecreaseAmount:
+    value: 0.01
+    description: ""
 
-#maxStaminaDecreaseAmount
-maxStaminaDecreaseAmount: 0.01
+  #give you slowness under this number
+  slownessStamina:
+    value: 25
+    description: ""
 
 #mode that allow stamina
 staminaInMode:
@@ -25,8 +41,5 @@ staminaInMode:
   #- CREATIVE
   #- ADVENTURE
   #- SPECTATOR
-
-#give you slowness under this number
-slownessStamina: 25
 
 titleFormat: "&6&lStamina&r [{stamina}/{startStamina}]"
